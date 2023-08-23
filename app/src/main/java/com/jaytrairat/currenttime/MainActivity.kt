@@ -9,6 +9,7 @@ import android.view.MotionEvent
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
+import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var caseNumberTxt: EditText
+    private lateinit var layoutUi: LinearLayout
     private fun hideKeyboardAndClearFocus(editText: EditText) {
         val inputMethodManager =
             getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
@@ -32,15 +34,28 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val sharedPreferences = getSharedPreferences("AppPrefs", Context.MODE_PRIVATE)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
 
         caseNumberTxt = binding.caseNumberTxt
+        layoutUi = binding.linearLayout
+        caseNumberTxt.setText(sharedPreferences.getString("caseNumber", "F00-00 EV00"))
         caseNumberTxt.setOnEditorActionListener { _, actionId, event ->
             if (actionId == EditorInfo.IME_ACTION_GO) {
+                val editor = sharedPreferences.edit()
+                editor.putString("caseNumber", caseNumberTxt.text.toString())
+                editor.apply()
                 hideKeyboardAndClearFocus(caseNumberTxt)
             }
             true
+        }
+
+        layoutUi.setOnTouchListener { _, event ->
+            if (event.action == MotionEvent.ACTION_DOWN) {
+                hideKeyboardAndClearFocus(caseNumberTxt)
+            }
+            false
         }
 
         setContentView(binding.root)

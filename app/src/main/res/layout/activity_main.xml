@@ -43,7 +43,7 @@
             android:id="@+id/caseNumberTxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="F01-66 EV01"
+            android:text="F00-00 EV00"
             android:layout_marginBottom="45dp"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
