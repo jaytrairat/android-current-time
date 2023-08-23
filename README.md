@@ -1,6 +1,5 @@
 # ตัวอย่าง
-![alt text](https://github.com/jaytrairat/android-current-time/raw/master/assets/image_v_1_1_h.png)
-![alt text](https://github.com/jaytrairat/android-current-time/raw/master/assets/image_v_1_1_v.png)
+![Example](https://github.com/jaytrairat/android-current-time/raw/master/assets/image_v_1_1_v.png)
 
 
 # ดาวน์โหลด
