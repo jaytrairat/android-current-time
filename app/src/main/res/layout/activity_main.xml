@@ -52,6 +52,7 @@
             android:imeOptions="actionGo"
             android:fontFamily="@font/prompt"
             android:background="@null"
+            android:inputType="text|textNoSuggestions"
             android:textSize="48sp"/>
 
         <TextView

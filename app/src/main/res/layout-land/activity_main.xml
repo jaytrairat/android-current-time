@@ -63,6 +63,7 @@
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:background="@null"
+                android:inputType="text|textNoSuggestions"
                 android:textSize="58sp" />
 
             <TextView
