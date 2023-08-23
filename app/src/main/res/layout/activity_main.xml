@@ -50,15 +50,15 @@
             android:singleLine="true"
             android:maxLength="12"
             android:imeOptions="actionGo"
-
+            android:fontFamily="@font/prompt"
             android:textSize="48sp"/>
 
         <TextView
             android:id="@+id/timeView"
             android:layout_width="411dp"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-smallcaps"
-            android:text="Date"
+            android:fontFamily="sans-serif-black"
+            android:text="00:00:00"
             android:maxLines="1"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
@@ -71,7 +71,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:fontFamily="sans-serif-black"
+            android:fontFamily="sans-serif"
             android:text="Date"
             android:maxLines="1"
             android:textAlignment="center"
