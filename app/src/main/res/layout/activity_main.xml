@@ -51,6 +51,7 @@
             android:maxLength="12"
             android:imeOptions="actionGo"
             android:fontFamily="@font/prompt"
+            android:background="@null"
             android:textSize="48sp"/>
 
         <TextView
