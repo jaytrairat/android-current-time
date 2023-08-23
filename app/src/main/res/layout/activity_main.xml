@@ -19,12 +19,12 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="102dp"
-            android:layout_height="137dp"
-            android:layout_marginBottom="2dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="10dp"
             android:adjustViewBounds="true"
             android:cropToPadding="false"
-            app:srcCompat="@drawable/logo" />
+            app:srcCompat="@drawable/dfu" />
 
         <TextView
             android:id="@+id/unitName"
@@ -36,7 +36,7 @@
             android:text="Digital Forensic Unit"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#FFFFFF"
+            android:textColor="#0052AA"
             android:textSize="16sp" />
 
         <EditText

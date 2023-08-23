@@ -29,7 +29,7 @@
                 android:layout_height="137dp"
                 android:adjustViewBounds="true"
                 android:cropToPadding="false"
-                app:srcCompat="@drawable/logo" />
+                app:srcCompat="@drawable/dfu" />
             <TextView
                 android:id="@+id/unitName"
                 android:layout_width="match_parent"
@@ -39,7 +39,7 @@
                 android:text="Digital Forensic Unit"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:textColor="#FFFFFF"
+                android:textColor="#0052AA"
                 android:textSize="16sp" />
 
         </LinearLayout>
